@@ -10,9 +10,9 @@ namespace Dio.Series.Interface
 
          void Inserir(T entidade);
 
-        void Excluir(int id);
+        bool Excluir(int id);
 
-        void Atualiza(int id,T entidade);
+        bool Atualiza(int id,T entidade);
 
         int ProximoId();
     }

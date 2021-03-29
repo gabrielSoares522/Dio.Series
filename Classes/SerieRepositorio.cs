@@ -5,34 +5,51 @@ namespace Dio.Series.Classes
 {
     public class SerieRepositorio : IRepositorio<Serie>
     {
-        public void Atualiza(int id, Serie entidade)
+        private List<Serie> listaSerie = new List<Serie>();
+        public bool Atualiza(int id, Serie entidade)
         {
-            throw new System.NotImplementedException();
+            try{
+                listaSerie[id] = entidade;
+            }catch{
+                return false;
+            }
+            return true;
         }
 
-        public void Excluir(int id)
+        public bool Excluir(int id)
         {
-            throw new System.NotImplementedException();
+            try{
+                listaSerie[id].excluir();
+            }catch{
+                return false;
+            }
+            return true;
         }
 
         public void Inserir(Serie entidade)
         {
-            throw new System.NotImplementedException();
+            listaSerie.Add(entidade);
         }
 
         public List<Serie> Lista()
         {
-            throw new System.NotImplementedException();
+            return listaSerie;
         }
 
         public int ProximoId()
         {
-            throw new System.NotImplementedException();
+            return listaSerie.Count;
         }
 
         public Serie RetornaPorId(int id)
         {
-            throw new System.NotImplementedException();
+            Serie serie;
+            try{
+                serie = listaSerie[id];
+            }catch{
+                return null;
+            }
+            return (!serie.Excluido)?serie:null;
         }
     }
 }
