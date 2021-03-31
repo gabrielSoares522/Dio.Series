@@ -10,6 +10,7 @@ namespace DIO.Series
 
         static void Main(string[] args)
         {
+            repositorio.Carregar();
             do {
                 string opcao = opcaoUsuario();
 

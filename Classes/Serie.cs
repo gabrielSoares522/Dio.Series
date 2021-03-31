@@ -1,5 +1,6 @@
 using Dio.Series.Enum;
 using System;
+using System.Xml.Serialization;
 
 namespace Dio.Series.Classes
 {
@@ -10,6 +11,15 @@ namespace Dio.Series.Classes
         public string Descricao {get;set;}
         public int Ano {get;set;}
         public bool Excluido {get;set;}
+
+        public Serie(){
+            this.Id = 0;
+            this.Genero = Genero.Acao;
+            this.Titulo = "";
+            this.Descricao = "";
+            this.Ano = 2020;
+            this.Excluido = false;
+        }
 
         public Serie(int id,Genero genero,string titulo, string descricao,int ano){
             this.Id = id;

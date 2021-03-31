@@ -15,5 +15,9 @@ namespace Dio.Series.Interface
         bool Atualiza(int id,T entidade);
 
         int ProximoId();
+
+        void Salvar();
+
+        void Carregar();
     }
 }

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<ArrayOfSerie xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Serie>
+    <Genero>Acao</Genero>
+    <Titulo>Dragon Ball Z</Titulo>
+    <Descricao>animação de luta japonesa</Descricao>
+    <Ano>1989</Ano>
+    <Excluido>false</Excluido>
+  </Serie>
+  <Serie>
+    <Genero>Aventura</Genero>
+    <Titulo>Stranger Things</Titulo>
+    <Descricao>Will, desaparece em Montauk, Long Island. Enquanto seus amigos procuram respostas, eles mergulham em um extraordinário mistério.</Descricao>
+    <Ano>2016</Ano>
+    <Excluido>false</Excluido>
+  </Serie>
+</ArrayOfSerie>
